@@ -29,10 +29,16 @@ export class EditRestaurantComponent implements OnInit {
       })
     }
 
-    deleteOnClick(_id) {
+    deleteOnClickRestaurant(_id) {
+      console.log("delete clicked on restaurant edit")
+
       let observable = this._httpService.deleteRestaurant(_id);
       observable.subscribe(data => {
+        console.log("delete clicked in subscribe restaurant edit")
+
         if(data["status"] === 200) {
+          console.log("delete clicked in status restaurant edit")
+
           this._router.navigate(["/"]);
         }
       })

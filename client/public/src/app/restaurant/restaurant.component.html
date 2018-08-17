@@ -1,4 +1,6 @@
 <div id='bg' class='my-2'>
+
+
   <div class='row'>
     <div class='col text-center pr-0'>
       <i id='restaurant' class="fas fa-restaurant align-middle"></i>
@@ -14,7 +16,10 @@
       <div class='align'>
         <button class='btn btn-info m-2 align-middle' [routerLink]="['edit', restaurant._id]">edit</button>
         <button class='btn btn-success m-2 align-middle' [routerLink]="['review', restaurant._id]">review</button>
+        <button type="button" class="btn btn-danger" (click)="deleteOnClick(foodRestaurant)">Delete</button>
+
       </div>
     </div>
   </div>
+
 </div>

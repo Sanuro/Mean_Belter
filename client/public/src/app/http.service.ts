@@ -23,7 +23,12 @@ export class HttpService {
     return this._http.put(`/restaurant/${_id}`,updatedRestaurant)
   }
 
+  // deleteRestaurant() {
+  //   return this._http.delete(`/deleteRestaurant/`);
+  // }
+  
   deleteRestaurant(_id) {
+    console.log("deleting restaurant in http service")
     return this._http.delete(`/deleteRestaurant/${_id}`);
   }
   

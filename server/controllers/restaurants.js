@@ -22,6 +22,17 @@ module.exports = {
             }
         })
     },
+
+    // getAll: function(req, res){
+    //     Review.find({}).sort([['rating', -1]]).exec(function(err,data){
+    //         if(err){
+    //             res.json(err)
+    //         } else {
+    //             res.json({restaurants: data})
+    //         }
+    //     })
+    // },
+
     getOne: function(req,res){
         Restaurant.findOne({_id:req.params.id}, function(err,data){
             if(err){
@@ -40,8 +51,9 @@ module.exports = {
             }
         })
     },
+
+
     deleteRestaurant: function(req, res) {
-        // must delete test and all reviews with it.
         Restaurant.remove({_id: req.params.id}, function(err) {
             if(err) {
                 return res.json(err);
@@ -51,6 +63,8 @@ module.exports = {
             }
         })
     },
+
+    
 
     newReview: function(req, res) {
         console.log("in newReview");

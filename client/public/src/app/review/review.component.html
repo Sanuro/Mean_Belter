@@ -1,14 +1,17 @@
 <div *ngIf="rev != null" id='bg' class='my-2'>
-  <div class='row'>
-    <div class='col col-sm-3 text-center pr-0'>
-        <i id='restaurant' class="fas fa-user-circle"></i>
-        <p>{{ rev.name }}</p>
-    </div>
-    <div class='col col-sm-9 px-0 py-2'>
-      <h6>Review: {{ rev.review }}</h6>
-      <h6>Rating: {{ rev.rating }}
-          💞 💜 ❣️ 💘 💔
-      </h6>
+    <div class='row'>
+      <div class='col col-sm-3 text-center pr-0'>
+          <i id='truck' class="fas fa-user-circle"></i>
+          <br>
+          <p>{{ rev.name }}</p>
+      </div>
+      <div class='col col-sm-9 px-0 py-2'>
+        
+        <h6>Review: {{ rev.review }}</h6>
+        <h6>Rating: {{ rev.rating }}
+
+            💜 💜 💜 💜 🖤
+        </h6>
+      </div>
     </div>
   </div>
-</div>
