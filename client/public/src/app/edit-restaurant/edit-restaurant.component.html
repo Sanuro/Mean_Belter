@@ -1,0 +1,29 @@
+<div class="row">
+  <form (submit)="updateFoodRestaurant(foodRestaurant._id)">
+
+    <div class="form-group">
+      <label>Name:</label>
+      <input type="text" class="form-control" name="foodRestaurant.name" [(ngModel)]="foodRestaurant.name">
+      <span *ngIf="error.name">{{error.name.message}}</span>
+    </div>
+
+    <div class="form-group">
+      <label>Cuisine:</label>
+      <input type="text" class="form-control" name="foodRestaurant.style" [(ngModel)]="foodRestaurant.style">
+      <span *ngIf="error.style">{{error.style.message}}</span>
+    </div>
+<!-- 
+    <div class="form-group">
+      <label>Description:</label>
+      <textarea class="form-control" name="foodtruck.description" [(ngModel)]="foodtruck.description"></textarea>
+      <span *ngIf="error.description">{{error.description.message}}</span>
+    </div> -->
+
+    <button type="button" class="btn btn-primary" [routerLink]="['/']">Cancel</button>
+    <button type="submit" class="btn btn-success">Update</button>
+    <button type="button" class="btn btn-danger" (click)="deleteOnClick(foodRestaurant._id)">Delete</button>
+
+
+  </form>
+</div>
+  

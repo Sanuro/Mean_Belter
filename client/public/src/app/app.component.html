@@ -1,0 +1,10 @@
+<h1>Welcome to Restaurants!</h1>
+<div class='container mb-0'>
+    <button type="button" [routerLink]="['/']">Dashboard</button>
+    <button type="button" [routerLink]="['new']">New</button>
+</div>
+<!-- <button type="button" [routerLink]="['/new']">Dashboard</button>
+<button type="button" [routerLink]="['/new']">Dashboard</button> -->
+<div class="container mb-3">
+    <router-outlet></router-outlet>
+</div>

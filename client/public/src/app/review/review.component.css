@@ -1,0 +1,11 @@
+div#bg{
+    background:#eee;
+    border: 2px solid black;
+}
+i#restaurant{
+    line-height: 50px;
+    transform: scale(2.5)
+}
+div.align{
+    line-height: 100px;
+}

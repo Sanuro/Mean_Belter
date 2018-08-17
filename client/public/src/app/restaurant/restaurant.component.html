@@ -1,0 +1,20 @@
+<div id='bg' class='my-2'>
+  <div class='row'>
+    <div class='col text-center pr-0'>
+      <i id='restaurant' class="fas fa-restaurant align-middle"></i>
+    </div>
+    <div class='col px-0 py-2'>
+      <h3>{{ restaurant.name }}</h3>
+      <h6>Cuisine: {{ restaurant.style }}</h6>
+      <h6>Average rating: {{ restaurant.avgRating }}
+          🍑 🍑 🍑 🍑 🍆
+      </h6>
+    </div>
+    <div class='col text-center'>
+      <div class='align'>
+        <button class='btn btn-info m-2 align-middle' [routerLink]="['edit', restaurant._id]">edit</button>
+        <button class='btn btn-success m-2 align-middle' [routerLink]="['review', restaurant._id]">review</button>
+      </div>
+    </div>
+  </div>
+</div>
